@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public bool isRight = true;
     public float heightJP = 8f;
     public bool isGround = true;
+    public Transform AttackPoint;
     public enum AttackState
     {
         None,
@@ -25,6 +26,9 @@ public class Player : MonoBehaviour
     private AttackState currentAttackState;
     float CountdownRoll = 4f;
     float Rolltimer;
+    public LayerMask WhatisEnemy;
+    public int Damage;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +37,7 @@ public class Player : MonoBehaviour
         timer = ActivetimeReset;
         currentAttackState = AttackState.None;
         CountdownRoll = Rolltimer;
+       
 
     }
     // Update is called once per frame
@@ -90,9 +95,16 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            
             currentAttackState++;
             Activetime = true;
             timer = ActivetimeReset;
+            Collider2D[] col = Physics2D.OverlapCircleAll(AttackPoint.position, 2f, WhatisEnemy);
+            foreach(Collider2D col2 in col)
+            {
+                col2.GetComponent<Enemy>().TakeDame();
+                Debug.Log("Chem trung");
+            }
             if (currentAttackState == AttackState.Attack1)
             {
                 animator.SetTrigger("Attack1");
@@ -107,7 +119,6 @@ public class Player : MonoBehaviour
             }
         }
        
-
     }
     void ResetComboo()
     {
@@ -147,5 +158,9 @@ public class Player : MonoBehaviour
         }
     }
 
-
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(AttackPoint.position, 1f);
+    }
 }
