@@ -178,7 +178,7 @@ Transform:
   m_GameObject: {fileID: 422702993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.119, z: 0}
+  m_LocalPosition: {x: 0, y: -0.123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 1024887943}
   - component: {fileID: 1024887948}
   - component: {fileID: 1024887946}
+  - component: {fileID: 1024887949}
   m_Layer: 3
   m_Name: Golem
   m_TagString: Untagged
@@ -359,7 +360,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01529181, y: -0.041386336}
+  m_Offset: {x: -0.01529181, y: -0.084013134}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -370,7 +371,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15573463, y: 0.2825963}
+  m_Size: {x: 0.15573463, y: 0.3678499}
   m_EdgeRadius: 0
 --- !u!212 &1024887944
 SpriteRenderer:
@@ -433,7 +434,7 @@ Transform:
   m_GameObject: {fileID: 1024887942}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.3, y: -1.26, z: 0}
+  m_LocalPosition: {x: 6.3, y: -1.25, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -452,9 +453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db52887d6bb5d545b1d31d002cf29f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointA: {fileID: 1273688340}
-  PointB: {fileID: 666130479}
-  moveSpeed: 2
   AttackPoint: {fileID: 422702994}
 --- !u!95 &1024887948
 Animator:
@@ -477,6 +475,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1024887949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024887942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d7a8788ccb5ae42b925f9d57db28ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointA: {fileID: 1273688340}
+  PointB: {fileID: 666130479}
+  moveSpeed: 2
+  dazedTime: 0
+  startDazedTime: 0.6
 --- !u!1 &1273688339
 GameObject:
   m_ObjectHideFlags: 0
