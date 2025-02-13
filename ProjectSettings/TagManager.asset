@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: hinh
+    uniqueID: 142152581
+    locked: 0

@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject WinGame;
     private void Awake(){
-        card = Resources.LoadAll<Sprite>("Ảnh/Animals");
+        card = Resources.LoadAll<Sprite>("Ảnh/AnhCard");
     }
     // Start is called before the first frame update
     void Start()
