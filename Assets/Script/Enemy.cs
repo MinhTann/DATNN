@@ -67,10 +67,7 @@ public class Enemy : MonoBehaviour
         Collider2D[] col = Physics2D.OverlapBoxAll(AttackPoint.position, new Vector3(3f, 0.5f, 2f),0);
         foreach (Collider2D col2 in col)
         {
-            if (col2.gameObject.name == "Player")
-            {
-                return true;
-            }
+            return true;
         }
         return false;
     }

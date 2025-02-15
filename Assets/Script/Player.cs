@@ -163,4 +163,8 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(AttackPoint.position, 1f);
     }
+    public void TakeDame()
+    {
+        animator.SetTrigger("Hurt");
+    }
 }
