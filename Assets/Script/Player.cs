@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public bool isRight = true;
     public float heightJP = 8f;
     public bool isGround = true;
+    public float baseBossDamage = 100f; 
+    private float currentBossDamage;
     public enum AttackState
     {
         None,
@@ -33,6 +35,7 @@ public class Player : MonoBehaviour
         timer = ActivetimeReset;
         currentAttackState = AttackState.None;
         CountdownRoll = Rolltimer;
+        currentBossDamage = baseBossDamage;
 
     }
     // Update is called once per frame
@@ -147,5 +150,18 @@ public class Player : MonoBehaviour
         }
     }
 
+public IEnumerator BuffBossDamage(float bonus, float duration)
+    {
+        // Tăng sát thương
+        currentBossDamage += bonus;
+        Debug.Log($"[Buff]: Sát thương boss tăng lên {currentBossDamage} trong {duration} giây!");
+
+        // Giữ hiệu ứng trong thời gian quy định
+        yield return new WaitForSeconds(duration);
+
+        // Trả lại sát thương ban đầu
+        currentBossDamage = baseBossDamage;
+        Debug.Log("[Buff]: Hết buff, sát thương boss trở lại: " + currentBossDamage);
+    }
 
 }
