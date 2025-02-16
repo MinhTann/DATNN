@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,10 +9,13 @@ public class Gird : MonoBehaviour
 {
    public Transform[,] grid;
     public int width, height;
+    public int score;
+    public TextMeshProUGUI scoretext;
     // Start is called before the first frame update
     void Start()
     {
         grid = new Transform[width, height];
+        score = 0; 
     }
 
     public void UpdateGird(Transform tetromino)
@@ -48,7 +52,7 @@ public class Gird : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        scoretext.text = score.ToString();
     }
 
     public bool IsInsideBorder(Vector2 pos)
@@ -85,6 +89,7 @@ public class Gird : MonoBehaviour
 
     public void CheckForLines()
     {
+        int Linecounts = 0;
         for (int y = 0; y < height; y++)
         {
             if (LineIsFull(y))
@@ -92,6 +97,16 @@ public class Gird : MonoBehaviour
                 DeleteLine(y);
                 DecreaseRowsAbove(y + 1);
                 y--;
+                Linecounts++;
+            }
+        }
+        if ((Linecounts > 0)){
+            switch (Linecounts){
+                case 1 : score +=10 ; break;
+                case 2 : score +=15 ; break;
+                case 3 : score +=20 ; break;
+                case 4 : score +=30 ; break;
+                default : break;
             }
         }
     }
