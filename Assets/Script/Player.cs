@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
             Collider2D[] col = Physics2D.OverlapCircleAll(AttackPoint.position, 2f, WhatisEnemy);
             foreach(Collider2D col2 in col)
             {
-                col2.GetComponent<Enemy>().TakeDame();
+                col2.GetComponent<Enemy2>().TakeDame();
                 Debug.Log("Chem trung");
             }
             if (currentAttackState == AttackState.Attack1)
