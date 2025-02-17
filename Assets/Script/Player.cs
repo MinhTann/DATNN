@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     public float heightJP = 8f;
     public bool isGround = true;
     public Transform AttackPoint;
+    public int maxHealth = 100;
+    public int currenthealth;
+    public HealthBar healthBar;
     public enum AttackState
     {
         None,
@@ -34,11 +37,12 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        healthBar = GetComponent<HealthBar>();  
         timer = ActivetimeReset;
         currentAttackState = AttackState.None;
         CountdownRoll = Rolltimer;
-       
-
+        currenthealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
     // Update is called once per frame
     void Update()
@@ -163,8 +167,9 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(AttackPoint.position, 1f);
     }
-    public void TakeDame()
+    public void TakeDame(int damage)
     {
         animator.SetTrigger("Hurt");
+       
     }
 }
