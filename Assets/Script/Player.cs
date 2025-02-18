@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -47,6 +48,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
         {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            TakeDame(20);
+        }
             Movement = Input.GetAxisRaw("Horizontal");
             if (Movement < 0f && isRight)
             {
@@ -78,6 +83,7 @@ public class Player : MonoBehaviour
             Rolltimer -= Time.deltaTime;
             Roll();
             BlocK();
+        
         }
     private void FixedUpdate()
     {
@@ -167,9 +173,10 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(AttackPoint.position, 1f);
     }
-    public void TakeDame(int damage)
+    void TakeDame(int damage)
     {
         animator.SetTrigger("Hurt");
-       
+        currenthealth -= damage;
+        healthBar.SetHealth(currenthealth);
     }
 }

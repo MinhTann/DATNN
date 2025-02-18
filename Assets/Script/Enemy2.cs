@@ -27,7 +27,7 @@ public class Enemy2 : MonoBehaviour
         cooldownTimer += Time.deltaTime;
         if(PlayerinSight())
         {
-            player.TakeDame(20);
+            
             if (cooldownTimer >= attackCooldown)
             {
                 cooldownTimer = 0;
