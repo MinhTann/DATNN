@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+   
     public GameObject[] Tetrominos;
     public float movementFrequency = 0.8f;
     private float passedTime = 0;
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         SpawnTetromino();
+        
     }
 
     // Update is called once per frame

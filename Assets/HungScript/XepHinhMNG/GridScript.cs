@@ -103,14 +103,15 @@ public class GridScript : MonoBehaviour
         }
         if(LineCounts > 0){
             switch (LineCounts){
-                case 1 : score += 10; break;
-                 case 2 : score += 15; break;
-                  case 3 : score += 20; break;
-                   case 4 : score += 30; break;
+                case 1 : score += 20; break;
+                 case 2 : score += 25; break;
+                  case 3 : score += 30; break;
+                   case 4 : score += 40; break;
                    default: break;
 
             }
         }
+        
     }
     private bool IsTopRowOccupied(){
         for (int x = 0; x < width; x++){
