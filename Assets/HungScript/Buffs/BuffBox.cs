@@ -11,7 +11,7 @@ public class BuffBox : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Gọi UI khi nhặt buff
-            BuffUIManager.Instance.ShowBuffUI("Buff Dame Boss", buffDuration);
+            BuffUIManager.Instance.ShowBuffUI("Buff Dame ", buffDuration);
             
             // Thực hiện logic buff dame ở đây
             StartCoroutine(DestroyBuffBox());
