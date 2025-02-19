@@ -14,9 +14,9 @@ public class Player : MonoBehaviour
     public float heightJP = 8f;
     public bool isGround = true;
     public Transform AttackPoint;
-    public int maxHealth = 100;
-    public int currenthealth;
-    public HealthBar healthBar;
+    //public int maxHealth = 100;
+    //public int currenthealth;
+   
     public enum AttackState
     {
         None,
@@ -37,13 +37,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        healthBar = GetComponent<HealthBar>();  
+        animator = GetComponent<Animator>();  
         timer = ActivetimeReset;
         currentAttackState = AttackState.None;
         CountdownRoll = Rolltimer;
-        currenthealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        //currenthealth = maxHealth;
     }
     // Update is called once per frame
     void Update()
@@ -176,7 +174,7 @@ public class Player : MonoBehaviour
     void TakeDame(int damage)
     {
         animator.SetTrigger("Hurt");
-        currenthealth -= damage;
-        healthBar.SetHealth(currenthealth);
+        //currenthealth -= damage;
+        
     }
 }
