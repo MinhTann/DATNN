@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChonAnhMNG.unity
     guid: 9f3c8f23ad037d54e9e6d7e09f6422db
+  - enabled: 1
+    path: Assets/Scenes/ScenesMiniXepHinh/XepHinhMNG.unity
+    guid: 5df9f7780ff261a419272e3d455ef7f5
   m_configObjects: {}
