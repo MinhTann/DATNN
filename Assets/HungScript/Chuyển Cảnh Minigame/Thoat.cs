@@ -9,6 +9,8 @@ public class Thoat : MonoBehaviour
 
     public void ReturnToMainGame()
     {
+        
+        ChonAnh.isMinigameCompleted = true; // Đánh dấu hoàn thành minigame
         SceneManager.LoadScene(mainSceneName);
     }
 }

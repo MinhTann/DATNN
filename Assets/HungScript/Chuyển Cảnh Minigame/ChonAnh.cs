@@ -5,14 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class ChonAnh : MonoBehaviour
 {
-    [SerializeField] private string minigameSceneName = "MinigameScene"; // Tên scene minigame
+  
+    public static bool isMinigameCompleted = false; // Biến lưu trạng thái
+    [SerializeField] private string minigameSceneName = "MinigameScene";
+
+    private void Start()
+    {
+        if (isMinigameCompleted) // Nếu đã hoàn thành minigame, hủy hộp
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player")) // Kiểm tra nếu nhân vật chạm vào
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("Nhân vật đã chạm vào cổng, chuyển sang minigame...");
-            SceneManager.LoadScene(minigameSceneName); // Chuyển đến scene minigame
+            SceneManager.LoadScene(minigameSceneName);
         }
     }
 }
+
+
