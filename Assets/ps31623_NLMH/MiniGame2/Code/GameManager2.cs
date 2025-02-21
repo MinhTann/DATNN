@@ -6,6 +6,14 @@ public class GameManager2  : MonoBehaviour
 {
     public GameObject[] goals;
     public GameObject[] boxes;
+    public GameObject exitButton;
+    public GameObject notific;
+
+    private void Awake()
+    {
+        exitButton.SetActive(false);
+        notific.SetActive(false);
+    }
 
     void Start()
     {
@@ -15,7 +23,13 @@ public class GameManager2  : MonoBehaviour
 
     void Update()
     {
-        Winner();
+        if (CheckWinCondition())
+        {
+            Time.timeScale = 0;
+            notific.SetActive(true);
+            exitButton.SetActive(true);
+            Debug.Log("Chúc mừng! Bạn đã hoàn thành màn chơi!");
+        }
     }
 
     bool CheckWinCondition()
@@ -36,13 +50,5 @@ public class GameManager2  : MonoBehaviour
         return true;
     }
 
-    public void Winner()
-    {
-
-        if (CheckWinCondition())
-        {
-            Time.timeScale = 0;
-        }
-    }
 }
 

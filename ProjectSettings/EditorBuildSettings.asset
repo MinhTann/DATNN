@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/main/Scenes/Mainmenu.unity
     guid: 84f39f321393d2e4d99e08dad98cdb2f
-  - enabled: 1
+  - enabled: 0
     path: Assets/main/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/main/Scenes/StoryScene.unity
     guid: e4116cb6687e569479efeb3524e6c607
+  - enabled: 1
+    path: Assets/ps31623_NLMH/MiniGame2/Code/DemoExitButton.unity
+    guid: 7414f76fb9f2dda478d0b06373ba707b
   m_configObjects: {}
