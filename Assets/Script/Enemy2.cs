@@ -13,7 +13,7 @@ public class Enemy2 : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     private Animator animator;
 
-    private Health playerHealth;
+    private HealthPLayer playerHealth;
     private float cooldownTimer = Mathf.Infinity;
 
     // Start is called before the first frame update
@@ -45,7 +45,7 @@ public class Enemy2 : MonoBehaviour
             , 0, Vector2.left, 0, playerLayer);
         if (hit.collider != null)
         {
-            playerHealth = hit.transform.GetComponent<Health>();
+            playerHealth = hit.transform.GetComponent<HealthPLayer>();
         }
         return hit.collider != null;
         

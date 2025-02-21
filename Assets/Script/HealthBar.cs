@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class HealthBars : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private Health PlayerHealth;
+    [SerializeField] private HealthPLayer PlayerHealth;
     [SerializeField] private Image Healtbar;
     void Start()
     {
