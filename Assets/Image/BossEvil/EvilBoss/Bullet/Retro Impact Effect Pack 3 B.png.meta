@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 227202355924fe245b04999e6883f20d
+guid: 9ee3b08fed4a5ec4ab90eca95a722f33
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,169 +97,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ATTACK_0
+      name: Retro Impact Effect Pack 3 B_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 2
-        width: 78
-        height: 68
-      alignment: 9
-      pivot: {x: 0.24398732, y: 0.48042253}
+        x: 2
+        y: 516
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b360231613c927444b252c2d8df4ba4d
-      internalID: -1300895102
+      spriteID: ed6850ad5c7efda4cbec4c0741a9b360
+      internalID: 282219595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK_1
+      name: Retro Impact Effect Pack 3 B_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 2
-        width: 78
-        height: 68
-      alignment: 9
-      pivot: {x: 0.2586165, y: 0.50839025}
+        x: 35
+        y: 516
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60b2e37d823c954fb22043714fb4b81
-      internalID: 1116988480
+      spriteID: 99c731f40bd85b542b5ced3045092ca0
+      internalID: -1503893069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK_2
+      name: Retro Impact Effect Pack 3 B_2
       rect:
         serializedVersion: 2
-        x: 169
-        y: 3
-        width: 75
-        height: 68
-      alignment: 9
-      pivot: {x: 0.2565686, y: 0.50559354}
+        x: 66
+        y: 516
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48b5f86a337c764449113c6238e698d5
-      internalID: -2106932352
+      spriteID: 5857df0a1e9314c4e9676fa743653400
+      internalID: -578109294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK_3
+      name: Retro Impact Effect Pack 3 B_3
       rect:
         serializedVersion: 2
-        x: 246
-        y: 2
-        width: 78
-        height: 68
-      alignment: 9
-      pivot: {x: 0.2565686, y: 0.5055935}
+        x: 99
+        y: 516
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 282d1fd2c0b8f3d41b73f3a4af19807f
-      internalID: 154042905
+      spriteID: a6ee8265abe7a6c4ea24ec7040d93f01
+      internalID: -1159915430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK_4
+      name: Retro Impact Effect Pack 3 B_4
       rect:
         serializedVersion: 2
-        x: 332
-        y: 3
-        width: 78
-        height: 68
-      alignment: 9
-      pivot: {x: 0.2565686, y: 0.5055935}
+        x: 133
+        y: 516
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 114c074a39ad27f47a6242388aa76021
-      internalID: -259203147
+      spriteID: 22e3c8e4a4450e046ad6eb2754161cc2
+      internalID: -330734885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK_5
+      name: Retro Impact Effect Pack 3 B_5
       rect:
         serializedVersion: 2
-        x: 412
-        y: 3
-        width: 78
-        height: 68
-      alignment: 9
-      pivot: {x: 0.2565686, y: 0.5055935}
+        x: 3
+        y: 1
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99a55204b46009b4293204e43966def5
-      internalID: 1012668999
+      spriteID: e50bc4fc244ecc041b28e3b782414cdc
+      internalID: 1326628585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK_6
+      name: Retro Impact Effect Pack 3 B_6
       rect:
         serializedVersion: 2
-        x: 493
-        y: 4
-        width: 75
-        height: 67
-      alignment: 9
-      pivot: {x: 0.2565686, y: 0.5055935}
+        x: 35
+        y: 1
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26e73c983efe7d4409647fb3e5eed2f9
-      internalID: -1640886385
+      spriteID: 4ef7f898b4585994e85d8585d183c7ed
+      internalID: -2043777244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ATTACK_7
+      name: Retro Impact Effect Pack 3 B_7
       rect:
         serializedVersion: 2
-        x: 568
-        y: 3
-        width: 78
-        height: 68
-      alignment: 9
-      pivot: {x: 0.2565686, y: 0.5055935}
+        x: 67
+        y: 1
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29e88bba15d988942ab39eb9a895461a
-      internalID: 1373505587
+      spriteID: 658d7a3f7f9ca3c419fea54b2ecd062e
+      internalID: 251433302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Retro Impact Effect Pack 3 B_8
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1449c7ccb6bff438710dc33e3b7cdc
+      internalID: -1894005349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Retro Impact Effect Pack 3 B_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e8c601ef3979a49896d00dfe96de0c
+      internalID: -24559939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Retro Impact Effect Pack 3 B_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf81e5a24fb09a444999880823c3a81b
+      internalID: 1080772141
       vertices: []
       indices: 
       edges: []
@@ -275,14 +338,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ATTACK_0: -1300895102
-      ATTACK_1: 1116988480
-      ATTACK_2: -2106932352
-      ATTACK_3: 154042905
-      ATTACK_4: -259203147
-      ATTACK_5: 1012668999
-      ATTACK_6: -1640886385
-      ATTACK_7: 1373505587
+      Retro Impact Effect Pack 3 B_0: 282219595
+      Retro Impact Effect Pack 3 B_1: -1503893069
+      Retro Impact Effect Pack 3 B_10: 1080772141
+      Retro Impact Effect Pack 3 B_2: -578109294
+      Retro Impact Effect Pack 3 B_3: -1159915430
+      Retro Impact Effect Pack 3 B_4: -330734885
+      Retro Impact Effect Pack 3 B_5: 1326628585
+      Retro Impact Effect Pack 3 B_6: -2043777244
+      Retro Impact Effect Pack 3 B_7: 251433302
+      Retro Impact Effect Pack 3 B_8: -1894005349
+      Retro Impact Effect Pack 3 B_9: -24559939
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

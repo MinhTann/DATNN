@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 354a5a49cadab6c408235a393ddb1733
+guid: d1698c24f79f9cd4b873237c9a07f736
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,89 +93,186 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FLYING_0
+      name: Run_3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 78
-        height: 69
+        x: 839
+        y: 83
+        width: 165
+        height: 151
       alignment: 9
-      pivot: {x: 0.33285668, y: 0.4470954}
+      pivot: {x: 0.18959, y: 0.1041607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a587bfdc7a68a2c49997e50a7402bf51
-      internalID: -529832241
+      spriteID: 4d5c03587ce1b424b89de96b10909c5e
+      internalID: 1508870973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLYING_1
+      name: Run_5
       rect:
         serializedVersion: 2
-        x: 89
-        y: 1
-        width: 78
-        height: 69
+        x: 1594
+        y: 83
+        width: 165
+        height: 151
       alignment: 9
-      pivot: {x: 0.24371348, y: 0.4899229}
+      pivot: {x: 0.18959, y: 0.1041607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81cea6d5da4340a4b90db783d47cb724
-      internalID: 410032463
+      spriteID: f2b47e61d77a1694199503ee0f47859e
+      internalID: 1833075419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLYING_2
+      name: Run_7
       rect:
         serializedVersion: 2
-        x: 169
-        y: 1
-        width: 78
-        height: 69
+        x: 94
+        y: 83
+        width: 165
+        height: 151
       alignment: 9
-      pivot: {x: 0.2570848, y: 0.47732666}
+      pivot: {x: 0.18959, y: 0.1041607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daa96d6d485a1524cbad7ffa33d83db1
-      internalID: -2076902174
+      spriteID: 174fd3246a4cc474bb3b6996e3fbefee
+      internalID: -494430550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLYING_3
+      name: Run_10
       rect:
         serializedVersion: 2
-        x: 250
-        y: 1
-        width: 74
-        height: 69
+        x: 1092
+        y: 83
+        width: 165
+        height: 151
       alignment: 9
-      pivot: {x: 0.26979396, y: 0.46221104}
+      pivot: {x: 0.18959, y: 0.1041607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e15648ccbe042b342a806e9069aec996
-      internalID: 652146617
+      spriteID: 3347b24c377b43546a00e2e0d4415de6
+      internalID: 1389134663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_11
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 83
+        width: 165
+        height: 151
+      alignment: 9
+      pivot: {x: 0.18959, y: 0.1041607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06aab9315a9ef454f8e2b6603a0fa76b
+      internalID: 1920228501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_12
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 83
+        width: 165
+        height: 151
+      alignment: 9
+      pivot: {x: 0.18959, y: 0.1041607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7531373c2503e44e8525ddfc2f1fa7f
+      internalID: -13610219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_13
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 83
+        width: 165
+        height: 151
+      alignment: 9
+      pivot: {x: 0.18959, y: 0.1041607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af150fde552b1646b8e61c4589d377a
+      internalID: 1185435531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_14
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 86
+        width: 154
+        height: 151
+      alignment: 9
+      pivot: {x: 0.18959, y: 0.1041607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b06879ab235fa143be19f615c648013
+      internalID: -1540912828
       vertices: []
       indices: 
       edges: []
@@ -191,10 +288,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FLYING_0: -529832241
-      FLYING_1: 410032463
-      FLYING_2: -2076902174
-      FLYING_3: 652146617
+      Run_0: 436128256
+      Run_1: -438368212
+      Run_10: 1389134663
+      Run_11: 1920228501
+      Run_12: -13610219
+      Run_13: 1185435531
+      Run_14: -1540912828
+      Run_2: 445638659
+      Run_3: 1508870973
+      Run_4: 1637700312
+      Run_5: 1833075419
+      Run_6: -1358369298
+      Run_7: -494430550
+      Run_8: -1552922420
+      Run_9: 364472816
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

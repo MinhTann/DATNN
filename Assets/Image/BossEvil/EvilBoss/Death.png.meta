@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 354a5a49cadab6c408235a393ddb1733
+guid: 2d61a015a3e4a7644946bfbe21e03597
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,89 +93,165 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FLYING_0
+      name: Death_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 78
-        height: 69
+        x: 858
+        y: 83
+        width: 165
+        height: 151
       alignment: 9
-      pivot: {x: 0.33285668, y: 0.4470954}
+      pivot: {x: 0.1074858, y: 0.1041607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a587bfdc7a68a2c49997e50a7402bf51
-      internalID: -529832241
+      spriteID: abf5cede016e66e42912dad713e83ab5
+      internalID: -413230983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLYING_1
+      name: Death_5
       rect:
         serializedVersion: 2
-        x: 89
-        y: 1
-        width: 78
-        height: 69
+        x: 1108
+        y: 83
+        width: 165
+        height: 151
       alignment: 9
-      pivot: {x: 0.24371348, y: 0.4899229}
+      pivot: {x: 0.1074858, y: 0.1041607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81cea6d5da4340a4b90db783d47cb724
-      internalID: 410032463
+      spriteID: d7c1aa597f086bf43ae83b84f5930cfd
+      internalID: -543475538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLYING_2
+      name: Death_6
       rect:
         serializedVersion: 2
-        x: 169
-        y: 1
-        width: 78
-        height: 69
+        x: 1358
+        y: 83
+        width: 165
+        height: 151
       alignment: 9
-      pivot: {x: 0.2570848, y: 0.47732666}
+      pivot: {x: 0.1074858, y: 0.1041607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daa96d6d485a1524cbad7ffa33d83db1
-      internalID: -2076902174
+      spriteID: 7f64715d12b65dd43a0494d9b190fa91
+      internalID: -1823497706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FLYING_3
+      name: Death_7
       rect:
         serializedVersion: 2
-        x: 250
-        y: 1
-        width: 74
-        height: 69
+        x: 108
+        y: 83
+        width: 165
+        height: 151
       alignment: 9
-      pivot: {x: 0.26979396, y: 0.46221104}
+      pivot: {x: 0.1074858, y: 0.1041607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e15648ccbe042b342a806e9069aec996
-      internalID: 652146617
+      spriteID: 0f2af30d998eaa64da743b86cdaa5b1d
+      internalID: -1183515004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 83
+        width: 165
+        height: 151
+      alignment: 9
+      pivot: {x: 0.1074858, y: 0.1041607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2eb5f3c847394478092aab90dc709b
+      internalID: 1980077449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_15
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 83
+        width: 165
+        height: 151
+      alignment: 9
+      pivot: {x: 0.1074858, y: 0.1041607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61aeed83f5f11343ae2bf7ddc8c4182
+      internalID: -547363184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death_18
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 83
+        width: 142
+        height: 151
+      alignment: 9
+      pivot: {x: 0.1074858, y: 0.1041607}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5691157be65fe945b9b52424456c1c5
+      internalID: 527307272
       vertices: []
       indices: 
       edges: []
@@ -191,10 +267,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FLYING_0: -529832241
-      FLYING_1: 410032463
-      FLYING_2: -2076902174
-      FLYING_3: 652146617
+      Death_0: 1495383747
+      Death_1: 896835144
+      Death_10: 1914025069
+      Death_11: 1980077449
+      Death_12: -691206939
+      Death_13: 769874278
+      Death_14: -1664490985
+      Death_15: -547363184
+      Death_16: -1705585550
+      Death_17: -553054652
+      Death_18: 527307272
+      Death_2: -1186329757
+      Death_3: -1909568749
+      Death_4: -413230983
+      Death_5: -543475538
+      Death_6: -1823497706
+      Death_7: -1183515004
+      Death_8: 1544270663
+      Death_9: -792220946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
