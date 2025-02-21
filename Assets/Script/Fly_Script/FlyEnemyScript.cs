@@ -11,7 +11,7 @@ public class FlyEnemyScript : MonoBehaviour
     private Vector3 startPos;
     private bool movingRight = true;
     public GameObject bulletPrefab; // Prefab của đạn 
-    public Transform firePoint; // Điểm mà đạn sẽ được bắn ra private 
+    public Transform firePoint; 
     public float fireRate = 2.0f; // Tần suất bắn (bắn một lần mỗi giây)
     private float nextFireTime = 0.0f;
     private bool isAttacking = false;
@@ -19,6 +19,7 @@ public class FlyEnemyScript : MonoBehaviour
     private bool checkisOnRight;
     Animator ani;
     int hit = 0;
+    private bool isALive = true;
     void Start()
     {
         ani = GetComponent<Animator>();
@@ -124,15 +125,23 @@ public class FlyEnemyScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "PlayerAttack123")
+        if (collision.gameObject.tag == "PlayerAttack123")
         {
-            Debug.Log("Có trúng damage");
-            hit++;
-            ani.SetTrigger("FlyHurt");
-            if (hit > 3)
+            if(isALive)
+            {
+                if (hit == 2)
+                {
+                    isALive = false;
+                }
+                hit++;
+                Debug.Log("Có trúng damage : " + hit);
+                ani.SetTrigger("FlyHurt");
+            }
+            else 
             {
                 ani.SetTrigger("FlyDie");
             }
+                
         }
     }
     void DestroyFlyEnemy() 
