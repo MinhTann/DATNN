@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
             Movement = Input.GetAxisRaw("Horizontal");
             if (Movement < 0f && isRight)
             {
-                transform.eulerAngles = new Vector3(0f, -180f, 0f);
+                transform.eulerAngles = new Vector3(0f, 0, 0f);
                 isRight = false;
             }
             else if (Movement > 0f && isRight == false)
