@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 276516437}
   - component: {fileID: 276516436}
   - component: {fileID: 276516438}
+  - component: {fileID: 276516439}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -261,6 +262,19 @@ MonoBehaviour:
   gameCard: []
   btns: []
   GameWin: {fileID: 1605905383}
+--- !u!114 &276516439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276516435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b008c28f072f1b46b076f96b901991e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSceneName: SampleScene
 --- !u!1 &590196918
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,9 +932,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 276516438}
-        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-        m_MethodName: Exit
+      - m_Target: {fileID: 276516439}
+        m_TargetAssemblyTypeName: Thoat, Assembly-CSharp
+        m_MethodName: ReturnToMainGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
