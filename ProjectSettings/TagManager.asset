@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Ground
   - PlayerAttack123
+  - pige
+  - gem
+  - Obstacles
+  - Object
+  - Box
+  - Goal
   layers:
   - Default
   - TransparentFX
@@ -14,9 +20,9 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
+  - Wall
+  - Box
+  - Goal
   - 
   - 
   - 
