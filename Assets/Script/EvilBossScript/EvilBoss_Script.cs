@@ -23,6 +23,9 @@ public class EvilBoss_Script : MonoBehaviour
     public float bulletSpeed = 10f;
     public Transform gunTip;
 
+    public Vector3 targetA;
+    public Vector3 targetB;
+
 
     [SerializeField] private Health _evilHealth;
     // Start is called before the first frame update
@@ -39,22 +42,23 @@ public class EvilBoss_Script : MonoBehaviour
         attackTimer += Time.deltaTime;
         if (attackTimer >= 5f)
         {
-            //MoveTowardsPlayer();
             if(_evilIsAttack)
             {
                 int s = Random.Range(0, 2);
                 switch (s)
                 {
                     case 0:
-                        StartCoroutine(DemShoot());
+                        // StartCoroutine(DemShoot());
                         //ShootAtPlayer();
+                        GunAttackPoint();
                         break;
                     case 1:
                         AttackPlayer();
                         break;
                 }
+                //GunAttackPoint();
                 //ShootAtPlayer();
-                 //AttackPlayer();
+                //AttackPlayer();
             }
             attackTimer = 0f; 
         }
@@ -62,18 +66,6 @@ public class EvilBoss_Script : MonoBehaviour
 
     void AttackPlayer()
     {
-        //int s = Random.Range(0, 1   );
-        //switch (s)
-        //{
-        //    case 0:
-        //        checkGoAttack = false;
-        //        ani.SetTrigger("Evil_Run");
-        //        break;
-        //    case 1:
-        //        ani.SetTrigger("Evil_Attack1");
-        //        break;
-        //}
-
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
         if (distance <= attackRange)
@@ -128,33 +120,13 @@ public class EvilBoss_Script : MonoBehaviour
         }
     }
 
-    void ShootAtPlayer()
+    void GunAttackPoint()
     {
-
-        //ani.SetTrigger("Fireball1");
-        Debug.Log(" Có 1 viên đạn");
-        // Tạo một đối tượng đạn mới
-        GameObject bullet = Instantiate(bulletPrefab, gunTip.position, Quaternion.identity);
-
-        // Tính toán hướng bắn
-        Vector3 direction = (player.transform.position + new Vector3(0,1.5f,0) - gunTip.position).normalized;
-
-        // Đặt vận tốc cho đạn
-        Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-
-        bulletRb.velocity = direction * bulletSpeed;
-        //Destroy(bullet, 4f);
+        Vector3[] points = { targetA, targetB };
+        Vector3 targetPosition = points[Random.Range(0, points.Length)];
+        Instantiate(bulletPrefab, targetPosition, Quaternion.identity);
     }
-    private IEnumerator DemShoot()
-    {
-        yield return new WaitForSeconds(1f);
-        for (int i = 1; i <= 5; i++)
-        {
-            Debug.Log(" Viên đạn thứ : " + i);
-            ShootAtPlayer();
-            yield return new WaitForSeconds(0.8f);
-        }
-    }
+ 
     public void GoAttack()
     {
         StartCoroutine(MoveBoss());
