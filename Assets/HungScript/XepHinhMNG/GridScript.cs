@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 public class GridScript : MonoBehaviour
 {
     public Transform[,] grid;
     private static int score;
+    public GameObject winText;
     public TextMeshProUGUI scoretext;
     public int width, height;
+
     // Start is called before the first frame update
     void Start()
     {
         grid = new Transform[width, height];
         score = 0;
+        winText.SetActive(false);
     }
-    void Update(){
-        scoretext.text = score.ToString();
+    void Update()
+    {
+
     }
 
     public void UpdateGrid(Transform tetromino)
@@ -44,8 +50,9 @@ public class GridScript : MonoBehaviour
                 grid[(int)pos.x, (int)pos.y] = mino;
             }
         }
-        if (IsTopRowOccupied()){
-            SceneManager.LoadScene(0);
+        if (IsTopRowOccupied())
+        {
+            SceneManager.LoadScene(5);
         }
     }
 
@@ -55,7 +62,7 @@ public class GridScript : MonoBehaviour
     }
 
     // Update is called once per frame
-   
+
     public bool IsInsideBorder(Vector2 pos)
     {
         return (int)pos.x >= 0 && (int)pos.x < width && (int)pos.y >= 0 && (int)pos.y < height;
@@ -101,21 +108,39 @@ public class GridScript : MonoBehaviour
                 LineCounts++;
             }
         }
-        if(LineCounts > 0){
-            switch (LineCounts){
-                case 1 : score += 20; break;
-                 case 2 : score += 25; break;
-                  case 3 : score += 30; break;
-                   case 4 : score += 40; break;
-                   default: break;
+        if (LineCounts > 0)
+        {
+            switch (LineCounts)
+            {
+                case 1: score += 10; break;
+                case 2: score += 15; break;
+                case 3: score += 20; break;
+                case 4: score += 30; break;
+                default: break;
 
             }
+
+            scoretext.text = "Score: " + score.ToString();
+
+            if (score == 30)
+            {
+                //winText.SetActive(true);
+                LoadScene1();
+                Time.timeScale = 0;
+                Debug.Log("YOU WIN!");
+            }
         }
-        
+
+
+
+
     }
-    private bool IsTopRowOccupied(){
-        for (int x = 0; x < width; x++){
-            if(grid[x, height - 1] !=null){
+    private bool IsTopRowOccupied()
+    {
+        for (int x = 0; x < width; x++)
+        {
+            if (grid[x, height - 1] != null)
+            {
                 return true;
             }
         }
@@ -159,6 +184,10 @@ public class GridScript : MonoBehaviour
         }
     }
 
+    public void LoadScene1()
+    {
+        SceneManager.LoadScene("GameOver");
+    }
 
 
 }
