@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ps31623_NLMH/MiniGame2/Code/Exit.unity
+    path: Assets/ps31623_NLMH/ScenesMinhHao/Exit.unity
     guid: 121177a9ff4cd874cb19b7cef55eec9a
   m_configObjects: {}
