@@ -410,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 5163311073220468773, guid: 1ee3ee221f2049947a85578dc1c0f464, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1776440047}
+      objectReference: {fileID: 1776440051}
     - target: {fileID: 5163311073220468773, guid: 1ee3ee221f2049947a85578dc1c0f464, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -421,7 +421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5163311073220468773, guid: 1ee3ee221f2049947a85578dc1c0f464, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameExit, Assembly-CSharp
+      value: ButtonExit, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5163311073220468773, guid: 1ee3ee221f2049947a85578dc1c0f464, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -434,6 +434,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1644607485953208382, guid: 1ee3ee221f2049947a85578dc1c0f464, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1776440047}
+    - targetCorrespondingSourceObject: {fileID: 1644607485953208382, guid: 1ee3ee221f2049947a85578dc1c0f464, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1776440051}
   m_SourcePrefab: {fileID: 100100000, guid: 1ee3ee221f2049947a85578dc1c0f464, type: 3}
 --- !u!1001 &347605631
 PrefabInstance:
@@ -3738,6 +3741,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f99126098cc2c459fce4a6b00a8343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1776440051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776440041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a674d0b3b9051440a530e61b24c1ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1793283592
 GameObject:
   m_ObjectHideFlags: 0
@@ -4021,7 +4036,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1934896520}
-        m_TargetAssemblyTypeName: GameExit, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonExit, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -4079,7 +4094,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1934896515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65f99126098cc2c459fce4a6b00a8343, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a674d0b3b9051440a530e61b24c1ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2041613874
