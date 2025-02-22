@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - PlayerAttack123
   - Grounded
+  - cardBtns
+  - Boss
   layers:
   - Default
   - TransparentFX
