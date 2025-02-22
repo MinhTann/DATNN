@@ -4,14 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - PlayerAttack123
   - pige
   - gem
-  - Obstacles
-  - Object
-  - Box
-  - Goal
   layers:
   - Default
   - TransparentFX
