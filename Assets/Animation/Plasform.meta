@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animation/Plasform.meta
 guid: 1ab7ea8d0ac747441910de630d131a3e
+========
+guid: 75c5454dddc5b9948a3c827afd6b3fd7
+>>>>>>>> parent of b84495ce (fix):Assets/Resources.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

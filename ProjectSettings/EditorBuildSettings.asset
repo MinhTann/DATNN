@@ -6,6 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/ps31623_NLMH/ScenesMinhHao/Exit.unity
     guid: 121177a9ff4cd874cb19b7cef55eec9a
+=======
+    path: Assets/Scenes/Mainmenu.unity
+    guid: 84f39f321393d2e4d99e08dad98cdb2f
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/StoryScene.unity
+    guid: e4116cb6687e569479efeb3524e6c607
+  - enabled: 1
+    path: Assets/Scenes/ChonAnhMNG.unity
+    guid: 9f3c8f23ad037d54e9e6d7e09f6422db
+  - enabled: 1
+    path: Assets/Scenes/ScenesMiniXepHinh/XepHinhMNG.unity
+    guid: 5df9f7780ff261a419272e3d455ef7f5
+  - enabled: 1
+    path: Assets/Scenes/ScenesMiniXepHinh/GameOver.unity
+    guid: 0e1c1288c792ed6488d7650422d27d34
+  - enabled: 1
+    path: Assets/Scenes/MainScenes.unity
+    guid: 4c5f25ba21d185a4fbb49a4311984b33
+>>>>>>> parent of b84495ce (fix)
   m_configObjects: {}
