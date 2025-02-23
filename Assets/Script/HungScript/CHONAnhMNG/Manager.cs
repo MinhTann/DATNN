@@ -28,7 +28,7 @@ public class Manager : MonoBehaviour
 
     void Awake()
     {
-        card = Resources.LoadAll<Sprite>("Images/Ảnh/Monters");
+        card = Resources.LoadAll<Sprite>("Ảnh/Monters");
     }
     // Start is called before the first frame update
     void Start()

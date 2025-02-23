@@ -12,14 +12,28 @@ public class GridScript : MonoBehaviour
     private static int score;
     public GameObject winText;
     public TextMeshProUGUI scoretext;
+    public TextMeshProUGUI monsterListText;
+    
+    private List<string> collectedMonsters = new List<string>(); 
+    public List<string> monsterPool = new List<string> { "Chuot", "Doi" };
     public int width, height;
 
+
+    public Image golemImage;
+    public Image doiImage;
     // Start is called before the first frame update
     void Start()
     {
         grid = new Transform[width, height];
         score = 0;
         winText.SetActive(false);
+
+        golemImage.gameObject.SetActive(false);
+        doiImage.gameObject.SetActive(false);
+
+
+        UpdateMonsterUI();
+        
     }
     void Update()
     {
@@ -103,6 +117,7 @@ public class GridScript : MonoBehaviour
             if (LineIsFull(y))
             {
                 DeleteLine(y);
+                CollectMonster();
                 DecreaseRowsAbove(y + 1);
                 y--;
                 LineCounts++;
@@ -181,6 +196,36 @@ public class GridScript : MonoBehaviour
                     grid[x, y - 1].position += Vector3.down;
                 }
             }
+        }
+    }
+
+    private void CollectMonster()
+    {
+        if (monsterPool.Count > 0)
+        {
+            int randomIndex = Random.Range(0, monsterPool.Count);
+            string collectedMonster = monsterPool[randomIndex];
+
+            if (!collectedMonsters.Contains(collectedMonster)) // Tránh thu thập trùng quái vật
+            {
+                collectedMonsters.Add(collectedMonster);
+                Debug.Log("Bạn đã thu thập quái vật: " + collectedMonster);
+                UpdateMonsterUI(); // Cập nhật UI
+            }
+
+        }
+    }
+        private void UpdateMonsterUI()
+    {
+        if (monsterListText != null)
+        {
+            monsterListText.text = "Quái vật: " + string.Join(", ", collectedMonsters);
+        }
+
+       foreach (string monster in collectedMonsters)
+        {
+            if (monster == "Golem") golemImage.gameObject.SetActive(true);
+            if (monster == "Doi") doiImage.gameObject.SetActive(true);
         }
     }
 
