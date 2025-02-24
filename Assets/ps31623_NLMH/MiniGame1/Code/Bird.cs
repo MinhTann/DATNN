@@ -107,6 +107,6 @@ public class Bird : MonoBehaviour
     public void ReloadScene()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("MiniGame1" + "");
+        SceneManager.LoadScene("MG1" + "");
     }
 }

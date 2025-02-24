@@ -13,7 +13,6 @@ public class UIManager : MonoBehaviour
 
     void ReturnToMainMenu()
     {
-        Time.timeScale = 1;
-        SceneManager.LoadScene("Minigame1"); 
+        SceneManager.LoadScene("Exit"); 
     }
 }
